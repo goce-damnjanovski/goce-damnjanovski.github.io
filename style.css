@@ -226,9 +226,6 @@ dd a:hover{
 /*-------------Projects ends--------------*/
 
 /*-------------Contact starts--------------*/
-#contacts {
-
-}
 #subtitle {
   color: yellow;
   padding: 100px 0 50px;
@@ -245,7 +242,6 @@ dd a:hover{
   padding-bottom: 50px;
   padding-top: 50px;
   text-align: center;
-
   height: 50px;
 }
 #contacts a{
