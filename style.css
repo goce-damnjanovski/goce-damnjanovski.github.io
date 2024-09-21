@@ -64,7 +64,6 @@ footer {
   line-height: 40px;
   text-decoration: none;
   margin-top: auto;
-
 }
 footer h4{
   padding: 3px;
@@ -93,8 +92,8 @@ footer a:hover{
 
 }
 #welcome-section h1 {
-    color: yellow;
-  }
+  color: yellow;
+}
 /*-------------Home Page ends--------------*/
 
 /*-------------About starts--------------*/
@@ -110,7 +109,7 @@ footer a:hover{
   border-radius: 10px;
   width: 70%;
   margin: 10% auto 5% auto;
-  text-wrap: normal;
+  text-wrap: wrap;
   height: 750px;
   padding: 10px;
 }
@@ -159,68 +158,125 @@ dd a:hover{
   margin-top: -60px;
   background-color: black;
   text-decoration: none;
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
-  grid-gap: 20px;
   text-align: center;
   height: auto;
 }
-#projects h2:first-of-type
- {
-  margin-top: 50px;
-  font-weight: normal;
-  color: yellow;
-  grid-column: 1 / -1;
-  justify-self: center;
-}
-.categories{
-  margin-top: 10px;
+.category-title, #allProjects
+{
+  margin-top: 60px;
   font-weight: normal;
   color: yellow;
   grid-column: 1 / -1;
   justify-self: center;
 }
 
-.project {
-  width: auto;
-  height: auto;
-  font-weight: bold;
-  text-decoration: none;
-  background-image: linear-gradient(white, gray);
-  margin: 10px;
-  border-radius: 5px;
+#projectsChoose{
+  display: flex;
+  align-items: stretch;
+  justify-items: stretch;
+  place-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #cccccc;
 }
-.project img:nth-child(2){
-  width: 300px;
-  height: 250px;
-}
-.project > img:nth-child(5),
-.project > img:nth-child(6){
-  width: 30px;
-  height: 30px;
-}
-.view_project{
-  display: block;
-  width: 30%;
-  height: 2em;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
+#projectsChoose button{
+  margin: 10% 10%;
   background-color: blue;
+  color: white;
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#projectsChoose button>a{
+  text-decoration: none;
+  color: white;
+}
+
+.gallery-section {
+  margin: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 181, 181);
+  overflow: hidden;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  width: 80%;
+}
+
+.modal-content img {
+  width: 50%;
+}
+
+.image-info {
+  color: black;
+  padding-left: 20px;
+}
+
+.image-info h2 {
+  margin-top: 0;
+}
+
+.image-info p{
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
-  margin: auto;
+  cursor: pointer;
 }
-.project a{
-  text-decoration: none;
-  font-weight: bold;
-}
-.view_project:hover{
-  background-color: yellow;
-  color: black;
-  border: none;
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-content img {
+    width: 100%;
+  }
+
+  .image-info {
+    padding: 15px;
+  }
 }
 /*-------------Projects ends--------------*/
 
