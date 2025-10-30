@@ -3,104 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Goce Damnjanovski</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title>
 
-  <!-- Bootstrap CSS -->
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
 
+  <!-- Your existing CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body>
 
-<body class="bg-light">
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Goce Damnjanovski</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+<!-- NAVIGATION -->
+<nav class="bg-dark p-3">
+  <ul id="navbar" class="d-flex justify-content-center list-unstyled mb-0">
+    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="index.html">HOME</a></li>
+    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="about.html">ABOUT</a></li>
+    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="projects.html">PROJECTS</a></li>
+    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="contact.html">CONTACT</a></li>
+  </ul>
 </nav>
 
-<!-- ABOUT SECTION -->
-<section class="container my-5">
-  <div class="row align-items-start">
-    <div class="col-md-4 mb-4">
-      <img src="images/about/photo1.jpg" alt="Goce Damnjanovski" class="img-fluid rounded shadow">
+<!-- MAIN CONTENT -->
+<div class="wrapper container py-5" id="about">
+  <div id="about-text-block" class="mx-auto" style="max-width: 900px;">
+    <div class="text-center mb-4">
+      <img src="images/about/photo1.jpg" alt="my photo" class="img-thumbnail rounded shadow-sm" style="max-width: 200px;">
     </div>
-    <div class="col-md-8">
-      <h1 class="mb-3">About Me</h1>
-      <p>
-        I am Goce Damnjanovski, a student at the Faculty of Computer Sciences and Engineering – FINKI in Skopje.
-        I previously completed my Master studies in Constitutional Law at the Faculty of Law "Iustinianus Primus" Skopje.
-        Since 2017, I have been developing Full Stack Web Development skills on the online platform FreeCodeCamp.
-      </p>
-      <p>
-        I have years of experience in the NGO sector, as founder and vice president of the Association MOTUS and
-        member of the Executive Board of the School Sports Club Krste Misirkov Kumanovo (USK KMK). I am currently
-        a freelance software tester at "testIO" and previously worked remotely as a data consultant at FLOW Insight, Oslo.
-      </p>
-    </div>
-  </div>
+    <h1 class="text-center mb-4">About Me</h1>
 
-  <!-- COURSES -->
-  <div class="mt-5">
-    <h3>Some of the courses I have taken:</h3>
-    <dl class="row mt-3">
-      <dt class="col-sm-3">Udemy.com</dt>
-      <dd class="col-sm-9">
-        - Learn to Program in Javascript: Beginner to Pro;
-        <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank" class="link-primary">View Certificate</a><br>
-        - Quickstart AngularJS;
-        <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank" class="link-primary">View Certificate</a><br>
-        - Learn Angular 5 from Scratch;
-        <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank" class="link-primary">View Certificate</a><br>
-        - Bootstrap 4 Quick Start;
-        <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank" class="link-primary">View Certificate</a>
+    <p class="paragraphs">
+      I am Goce Damnjanovski. I am a student at the Faculty of Computer Sciences and Engineering-FINKI in Skopje.
+      I have previously completed the Master studies in Constitutional Law at the Faculty of Law "Iustinianus Primus" Skopje.
+      Since 2017, I have been learning the skills of Full Stack Web Development on the online educational platform FreeCodeCamp.
+    </p>
+
+    <p class="paragraphs">
+      I have many years of experience in the NGO sector. I am the founder and vice president of the Association MOTUS
+      and a member of the Executive Board of the School Sports Club Krste Misirkov Kumanovo (USK KMK).
+      I am currently a freelance software tester in "testIO". Earlier in 2020, I worked as a remote data consultant
+      at FLOW Insight in Oslo, Norway.
+    </p>
+
+    <h3 class="mt-5">Some of the courses I have taken:</h3>
+    <dl class="mt-3">
+      <dt class="fw-bold">Udemy.com:</dt>
+      <dd>- Learn to Program in Javascript: Beginner to Pro;
+        <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank">View Certificate</a>
+      </dd>
+      <dd>- Quickstart AngularJS;
+        <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank">View Certificate</a>
+      </dd>
+      <dd>- Learn Angular 5 from Scratch;
+        <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank">View Certificate</a>
+      </dd>
+      <dd>- Bootstrap 4 Quick Start;
+        <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank">View Certificate</a>
       </dd>
 
-      <dt class="col-sm-3 mt-3">FreeCodeCamp</dt>
-      <dd class="col-sm-9 mt-3">
-        - JavaScript Algorithms and Data Structures;
-        <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures"
-           target="_blank" class="link-primary">View Certificate</a><br>
-        - Responsive Web Design;
-        <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design"
-           target="_blank" class="link-primary">View Certificate</a>
+      <dt class="fw-bold mt-3">FreeCodeCamp:</dt>
+      <dd>- JavaScript Algorithms and Data Structures;
+        <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures" target="_blank">View Certificate</a>
+      </dd>
+      <dd>- Responsive Web Design;
+        <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design" target="_blank">View Certificate</a>
       </dd>
     </dl>
   </div>
-</section>
+</div>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  <p class="mb-0">
+<footer class="bg-dark text-center text-white py-3 mt-5">
+  <h6 class="mb-0">
     2024 &#169; Coded by
-    <a href="https://github.com/goce-damnjanovski" target="_blank" class="text-white fw-bold text-decoration-none">
+    <a target="_blank" href="https://github.com/goce-damnjanovski" class="text-white text-decoration-none fw-bold">
       Goce Damnjanovski
     </a>
-  </p>
+  </h6>
 </footer>
 
-<!-- Bootstrap JS Bundle -->
-<script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous">
-</script>
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
