@@ -97,59 +97,64 @@ footer a:hover{
 /*-------------Home Page ends--------------*/
 
 /*-------------About starts--------------*/
-#about {
-  background-color: black;
-  height: auto;
-  width: 100%;
-  top: 0;
-
-}
-#about-text-block{
-  background-image: linear-gradient(white, gray);
-  border-radius: 10px;
-  width: 70%;
-  margin: 10% auto 5% auto;
-  text-wrap: wrap;
-  height: 750px;
-  padding: 10px;
-}
-#about-text-block > img {
-  width: 200px;
-  height: 250px;
-  margin-right: 10px;
-}
-.paragraphs {
-  text-align: justify;
-  padding-bottom: 5px;
-  text-indent: 30px;
-}
-#about-text-block > h3{
-  margin-top: 30px;
-  text-align: justify;
-}
-dl{
-  float: left;
-  margin-bottom: 100px;
-}
-dl dt{
-  text-align: left;
-  margin-top: 3px;
-  font-weight: bold;
-}
-dd{
-  text-indent: 20px;
-  text-align: justify;
-}
-dd a{
+/* ---- NAV LINKS (не ги менуваме твоите текстови, само правиме боја и spacing) */
+#navbar a.nav-link-custom {
+  color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  padding: 6px 8px;
+  display: inline-block;
 }
-dd a:hover{
-  color: darkblue;
+
+/* мал нагласок за активната страница */
+#navbar a.nav-link-custom.active {
+  text-decoration: underline;
 }
+
+/* осигурај nav да е видливо и над останатото (ако имаш absolute/positioned елементи) */
+#main-nav {
+  position: relative;
+  z-index: 9999;
+}
+
+/* ---- COURSE SECTION: ограничи го текстот и додади рамка/падинг */
+.course-section {
+  background-color: #f8f9fa;   /* светло сива, како bootstrap bg-light */
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-wrap: break-word;   /* тоа ќе спречи текстот да излезе од рамката */
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* ако имаш .wrapper или #about специфични стајли, осигурај се дека не го „смачкуваат“ садот */
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ако имаш photo float во стар CSS, откако го сменивме на центриран, сосема стави ова */
+#about-text-block img {
+  float: none !important;
+  margin: 0 auto 12px auto;
+  display: block;
+}
+
+/* поправање на параграфи — да не излегуваат */
+.paragraphs {
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* дополни ако сакаш hover на линкови */
+#about-text-block a {
+  color: #0d6efd;
+}
+#about-text-block a:hover {
+  text-decoration: underline;
+}
+
 /*-------------About ends--------------*/
 
 /*-------------Projects starts--------------*/
