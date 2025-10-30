@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
 
-  <!-- Your existing CSS -->
+  <!-- Your existing CSS (ensure this path is correct) -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="bg-dark p-3">
-  <ul id="navbar" class="d-flex justify-content-center list-unstyled mb-0">
-    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="index.html">HOME</a></li>
-    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="about.html">ABOUT</a></li>
-    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="projects.html">PROJECTS</a></li>
-    <li class="mx-3"><a class="text-white text-decoration-none fw-bold" href="contact.html">CONTACT</a></li>
-  </ul>
+<!-- NAVIGATION (минимално променето — истите текстови линкови, но сигурно видливо) -->
+<nav class="bg-dark" id="main-nav">
+  <div class="container">
+    <ul id="navbar" class="d-flex justify-content-center list-unstyled mb-0 py-2">
+      <li class="mx-3"><a class="nav-link-custom" href="index.html">HOME</a></li>
+      <li class="mx-3"><a class="nav-link-custom active" href="about.html">ABOUT</a></li>
+      <li class="mx-3"><a class="nav-link-custom" href="projects.html">PROJECTS</a></li>
+      <li class="mx-3"><a class="nav-link-custom" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- MAIN CONTENT -->
@@ -33,6 +34,7 @@
     <div class="text-center mb-4">
       <img src="images/about/photo1.jpg" alt="my photo" class="img-thumbnail rounded shadow-sm" style="max-width: 200px;">
     </div>
+
     <h1 class="text-center mb-4">About Me</h1>
 
     <p class="paragraphs">
@@ -49,50 +51,42 @@
     </p>
 
     <h3 class="mt-5">Some of the courses I have taken:</h3>
-    <div class="mt-3">
+
+    <!-- COURSE BOX: оваа рамка ги држи сите курсеви внатре и нема да прелета -->
+    <div class="course-section mt-3">
       <h4 class="fw-bold">Udemy.com:</h4>
-      <ul class="list-unstyled ms-3">
+      <ul class="list-unstyled ms-3 mb-3">
         <li>- Learn to Program in Javascript: Beginner to Pro;
-          <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank">View Certificate</a>
+          <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank" rel="noopener">View Certificate</a>
         </li>
         <li>- Quickstart AngularJS;
-          <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank">View Certificate</a>
+          <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank" rel="noopener">View Certificate</a>
         </li>
         <li>- Learn Angular 5 from Scratch;
-          <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank">View Certificate</a>
+          <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank" rel="noopener">View Certificate</a>
         </li>
         <li>- Bootstrap 4 Quick Start;
-          <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank">View Certificate</a>
+          <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank" rel="noopener">View Certificate</a>
         </li>
       </ul>
 
-      <h4 class="fw-bold mt-4">FreeCodeCamp:</h4>
-      <ul class="list-unstyled ms-3">
+      <h4 class="fw-bold mt-2">FreeCodeCamp:</h4>
+      <ul class="list-unstyled ms-3 mb-0">
         <li>- JavaScript Algorithms and Data Structures;
-          <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures" target="_blank">View Certificate</a>
+          <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures" target="_blank" rel="noopener">View Certificate</a>
         </li>
         <li>- Responsive Web Design;
-          <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design" target="_blank">View Certificate</a>
+          <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design" target="_blank" rel="noopener">View Certificate</a>
         </li>
       </ul>
     </div>
+
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer class="bg-dark text-center text-white py-3 mt-5">
-  <h6 class="mb-0">
-    2024 &#169; Coded by
-    <a target="_blank" href="https://github.com/goce-damnjanovski" class="text-white text-decoration-none fw-bold">
-      Goce Damnjanovski
-    </a>
-  </h6>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-
-</body>
-</html>
+  <div class="container">
+    <h6 class="mb-0">
+      2024 &#169; Coded by
+      <a target="_blank" href="https://github.com/goce-damnjanovski" class="text-_
