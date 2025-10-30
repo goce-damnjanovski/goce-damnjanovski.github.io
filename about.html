@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
+  <title>About | Goce Damnjanovski</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -11,82 +11,109 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
 
-  <!-- Your existing CSS (ensure this path is correct) -->
+  <!-- Your CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-<!-- NAVIGATION (минимално променето — истите текстови линкови, но сигурно видливо) -->
-<nav class="bg-dark" id="main-nav">
+<!-- NAVIGATION (синхронизирано со index.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container">
-    <ul id="navbar" class="d-flex justify-content-center list-unstyled mb-0 py-2">
-      <li class="mx-3"><a class="nav-link-custom" href="index.html">HOME</a></li>
-      <li class="mx-3"><a class="nav-link-custom active" href="about.html">ABOUT</a></li>
-      <li class="mx-3"><a class="nav-link-custom" href="projects.html">PROJECTS</a></li>
-      <li class="mx-3"><a class="nav-link-custom" href="contact.html">CONTACT</a></li>
-    </ul>
+    <a class="navbar-brand fw-bold" href="index.html">Goce Damnjanovski</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="projectsDropdown">
+            <li><a class="dropdown-item" href="daily-logo-design.html">Daily Logo Design Challenge</a></li>
+            <li><a class="dropdown-item" href="daily-ui-design.html">Daily UI Design Challenge</a></li>
+            <li><a class="dropdown-item" href="other-projects.html">Other Projects</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <!-- MAIN CONTENT -->
-<div class="wrapper container py-5" id="about">
-  <div id="about-text-block" class="mx-auto" style="max-width: 900px;">
-    <div class="text-center mb-4">
-      <img src="images/about/photo1.jpg" alt="my photo" class="img-thumbnail rounded shadow-sm" style="max-width: 200px;">
-    </div>
-
-    <h1 class="text-center mb-4">About Me</h1>
-
-    <p class="paragraphs">
-      I am Goce Damnjanovski. I am a student at the Faculty of Computer Sciences and Engineering-FINKI in Skopje.
-      I have previously completed the Master studies in Constitutional Law at the Faculty of Law "Iustinianus Primus" Skopje.
-      Since 2017, I have been learning the skills of Full Stack Web Development on the online educational platform FreeCodeCamp.
-    </p>
-
-    <p class="paragraphs">
-      I have many years of experience in the NGO sector. I am the founder and vice president of the Association MOTUS
-      and a member of the Executive Board of the School Sports Club Krste Misirkov Kumanovo (USK KMK).
-      I am currently a freelance software tester in "testIO". Earlier in 2020, I worked as a remote data consultant
-      at FLOW Insight in Oslo, Norway.
-    </p>
-
-    <h3 class="mt-5">Some of the courses I have taken:</h3>
-
-    <!-- COURSE BOX: оваа рамка ги држи сите курсеви внатре и нема да прелета -->
-    <div class="course-section mt-3">
-      <h4 class="fw-bold">Udemy.com:</h4>
-      <ul class="list-unstyled ms-3 mb-3">
-        <li>- Learn to Program in Javascript: Beginner to Pro;
-          <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-        <li>- Quickstart AngularJS;
-          <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-        <li>- Learn Angular 5 from Scratch;
-          <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-        <li>- Bootstrap 4 Quick Start;
-          <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-      </ul>
-
-      <h4 class="fw-bold mt-2">FreeCodeCamp:</h4>
-      <ul class="list-unstyled ms-3 mb-0">
-        <li>- JavaScript Algorithms and Data Structures;
-          <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-        <li>- Responsive Web Design;
-          <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design" target="_blank" rel="noopener">View Certificate</a>
-        </li>
-      </ul>
-    </div>
-
+<div class="container my-3 py-5 border rounded bg-light text-dark">
+  <div class="text-center mb-4">
+    <img src="images/about/photo1.jpg" alt="my photo" class="img-thumbnail rounded shadow-sm" style="max-width: 200px;">
   </div>
+
+  <h1 class="text-center mb-4">About Me</h1>
+
+  <p class="paragraphs">
+    I am Goce Damnjanovski. I am a student at the Faculty of Computer Sciences and Engineering-FINKI in Skopje.
+    I have previously completed the Master studies in Constitutional Law at the Faculty of Law "Iustinianus Primus" Skopje.
+    Since 2017, I have been learning the skills of Full Stack Web Development on the online educational platform FreeCodeCamp.
+  </p>
+
+  <p class="paragraphs">
+    I have many years of experience in the NGO sector. I am the founder and vice president of the Association MOTUS
+    and a member of the Executive Board of the School Sports Club Krste Misirkov Kumanovo (USK KMK).
+    I am currently a freelance software tester in "testIO". Earlier in 2020, I worked as a remote data consultant
+    at FLOW Insight in Oslo, Norway.
+  </p>
+
+  <h3 class="fs-5 mt-3 text-start">Some of the courses I have taken:</h3>
+
+  <!-- COURSES BOX -->
+  <div class="p-3 mt-3 text-start">
+    <h4 class="fs-6 fw-bold">Udemy.com:</h4>
+    <ul class="list-unstyled ms-3 mb-3">
+      <li>- Learn to Program in Javascript: Beginner to Pro;
+        <a href="https://www.udemy.com/certificate/UC-57UANQ43/" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+      <li>- Quickstart AngularJS;
+        <a href="https://www.udemy.com/certificate/UC-TXLV4738/" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+      <li>- Learn Angular 5 from Scratch;
+        <a href="https://www.udemy.com/certificate/UC-XYE5XEZH/" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+      <li>- Bootstrap 4 Quick Start;
+        <a href="https://www.udemy.com/certificate/UC-1RHV6HZI/" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+    </ul>
+
+    <h4 class="fs-6 fw-bold mt-3">FreeCodeCamp:</h4>
+    <ul class="list-unstyled ms-3 mb-0">
+      <li>- JavaScript Algorithms and Data Structures;
+        <a href="https://www.freecodecamp.org/certification/goce.dam352/javascript-algorithms-and-data-structures" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+      <li>- Responsive Web Design;
+        <a href="https://www.freecodecamp.org/certification/goce.dam352/responsive-web-design" target="_blank" rel="noopener">View Certificate</a>
+      </li>
+    </ul>
+  </div>
+
 </div>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-center text-white py-3 mt-5">
+<footer class="bg-dark text-center text-white py-3 mt-auto">
   <div class="container">
-    <h6 class="mb-0">
-      2024 &#169; Coded by
-      <a target="_blank" href="https://github.com/goce-damnjanovski" class="text-_
+    <small>
+      2024 &copy; Coded by
+      <a class="text-white text-decoration-underline fw-bold" target="_blank" href="https://github.com/goce-damnjanovski">
+        Goce Damnjanovski
+      </a>
+    </small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
