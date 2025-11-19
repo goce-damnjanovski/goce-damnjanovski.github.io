@@ -4,67 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    //bootstrap
+    <!---bootstrap---->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossorigin="anonymous">
-    //=======================
-    <title>Home</title>
+    <!--====================-->
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
-<nav>
-    <ul id='navbar'>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Goce Damnjanovski</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="daily-logo-design.html">Daily Logo Design Challenge</a></li>
+                        <li><a class="dropdown-item" href="daily-ui-design.html">Daily UI Design Challenge</a></li>
+                        <li><a class="dropdown-item" href="other-projects.html">Other Projects</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link active fw-bold" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
-<div class="wrapper">
-        <h4 id="subtitle">
-            If you would like to learn more about me and see more of my work, you can find me at:
-        </h4>
-    <div id="contacts">
-        <a href="https://www.facebook.com/goce.damnjanovski352/" target="_blank" class="contact">
-            <img src="images/contact/facebook-logo.svg" alt="Facebook">
-        </a>
-        <a href="https://github.com/goce-damnjanovski" target="_blank" class="contact">
-            <img src="images/contact/github-logo.svg" alt="Github">
-        </a>
-        <a href="https://codepen.io/gocedamnjanovski/" target="_blank" class="contact">
-            <img src="images/contact/codepen-logo.svg" alt="Codepen">
-        </a>
-        <a href="https://www.freecodecamp.org/goce.dam352" target="_blank" class="contact">
-            <img src="images/contact/freecodecamp-logo.svg" alt="FreeCodeCamp">
-        </a>
-        <a href="https://www.linkedin.com/in/goce-damnjanovski-463352a7/" target="_blank" class="contact">
-            <img src="images/contact/linkedin-logo.svg" alt="Linkedin">
-        </a>
-        <a href="https://www.hackerrank.com/goce_dam352" target="_blank" class="contact">
-            <img src="images/contact/hackerrank-logo.svg" alt="HackerRank">
-        </a>
-        <a href="https://www.behance.net/gocedamnjan" target="_blank" class="contact">
-            <img src="images/contact/behance-logo.svg" alt="Behance">
-        </a>
-        <a href="https://dribbble.com/gocedamnjanovski" target="_blank" class="contact">
-            <img src="images/contact/dribbble-logo.svg" alt="Dribble">
-        </a>
+
+<!-- PAGE TITLE -->
+<h2 id="contact" class="text-center">Contact</h2>
+
+<!-- CONTACT SECTION -->
+<div class="container my-3 py-5 border rounded bg-secondary">
+
+    <h4 id="subtitle" class="text-center text-light">
+        If you would like to learn more about me and see more of my work, you can find me at:
+    </h4>
+
+    <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 g-4 text-center">
+
+        <!-- Facebook -->
+        <div class="col">
+            <a href="https://www.facebook.com/goce.damnjanovski352/" target="_blank"
+               class="d-flex justify-content-center">
+                <img src="images/contact/facebook-logo.svg" alt="Facebook" class="icon img-fluid">
+            </a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="col">
+
+            <a href="https://github.com/goce-damnjanovski" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/github-logo.svg" alt="Github" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- Codepen -->
+        <div class="col">
+
+            <a href="https://codepen.io/gocedamnjanovski/" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/codepen-logo.svg" alt="Codepen" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- FreeCodeCamp -->
+        <div class="col">
+
+            <a href="https://www.freecodecamp.org/goce.dam352" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/freecodecamp-logo.svg" alt="FreeCodeCamp" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="col">
+
+            <a href="https://www.linkedin.com/in/goce-damnjanovski-463352a7/" target="_blank"
+               class="d-flex justify-content-center">
+                <img src="images/contact/linkedin-logo.svg" alt="Linkedin" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- HackerRank -->
+        <div class="col">
+
+            <a href="https://www.hackerrank.com/goce_dam352" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/hackerrank-logo.svg" alt="HackerRank" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- Behance -->
+        <div class="col">
+
+            <a href="https://www.behance.net/gocedamnjan" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/behance-logo.svg" alt="Behance" class="icon img-fluid">
+            </a>
+
+        </div>
+
+        <!-- Dribbble -->
+        <div class="col">
+
+            <a href="https://dribbble.com/gocedamnjanovski" target="_blank" class="d-flex justify-content-center">
+                <img src="images/contact/dribbble-logo.svg" alt="Dribbble" class="icon img-fluid">
+            </a>
+
+        </div>
+
     </div>
 </div>
-<footer>
-    <h4 id="coded_by">
-        2024 &#169 Coded by
-        <a target="_blank" href="https://github.com/goce-damnjanovski">Goce Damnjanovski</a>
-    </h4>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-center text-white py-3 mt-auto">
+    <div class="container">
+        <small>
+            2024 &copy; Coded by
+            <a class="text-white text-decoration-underline fw-bold"
+               target="_blank"
+               href="https://github.com/goce-damnjanovski">
+                Goce Damnjanovski
+            </a>
+        </small>
+    </div>
 </footer>
 
-// JavaScript
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-//==================
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
